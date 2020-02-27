@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">我是被获取到的id</div>
+    <script>
+        console.log(Math.floor(Math.random()*(64-15+1)+15))
+        function getdomid(ids){
+            return document.getElementById(ids)
+        }
+        let box=getdomid("box")
+        console.log(box)
+        let arr=[44,89,85]
+     arr.sort(function(a,b){
+          return a-b
+        })
+        console.log(arr)
+        var datas=new Date()
+        var year=datas.getFullYear()
+        var mounth=datas.getMonth()
+        var data=datas.getDate()
+        var day=datas.getDay()
+        var hourse=datas.getHours()
+        var mintus=datas.getMinutes()
+        var second=datas.getSeconds()
+        document.write(`${year}年${mounth}月${data}日${day}星期${hourse}小时${mintus}分${second}秒`)
+
+    </script>
+</body>
+</html>
